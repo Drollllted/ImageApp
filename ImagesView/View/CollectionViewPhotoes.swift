@@ -117,7 +117,7 @@ extension CollectionViewPhotoes: UICollectionViewDelegate, UICollectionViewDataS
         cell.layer.cornerRadius = 30
         return cell
     }
-    
+        //MARK: fff
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = PhotoesController()
         vc.changePhotoes(with: images[indexPath.item])
