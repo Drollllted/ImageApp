@@ -17,6 +17,7 @@ class CustomCell: UICollectionViewCell{
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(systemName: "questionmark")
+        imageView.layer.cornerRadius = 30
         return imageView
     }()
     
@@ -28,11 +29,13 @@ class CustomCell: UICollectionViewCell{
         return button
     }()
     
+
+    
     
     public func configure(with image: UIImage){
         imagesView.image = image
         setImagesView()
-        setHeartButton()
+       // setHeartButton()
     }
     
     
